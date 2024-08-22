@@ -1,13 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework_19</title>
-    <link rel="stylesheet" href=".assets/styles/styles.css">
+    <title>Case Study - Ismael Salazar</title>
+    <!-- Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #4a5b3a; /* Custom Background Color */
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #8d867b;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .hero-section {
+            background-color: #4a5b3a;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero-section h1 {
+            font-size: 48px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .hero-section p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .hero-section button {
+            background-color: #a97b71;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+        }
+
+        .skills-section, .work-section {
+            padding: 60px 0;
+            color: #000;
+            background-color: #f2f0ec;
+        }
+
+        .skills-section h2, .work-section h2 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .skill-item {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .skill-item img {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+
+        .project-item {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .project-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .project-item button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #8d867b;
+            padding: 40px 0;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
 </head>
+
 <body>
-    <h1> heading</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo vitae ad ab amet rerum aperiam numquam veritatis, natus consectetur similique nisi tempora voluptate suscipit placeat molestiae impedit perferendis autem sed?</p>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ismael Salazar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <h1>HELLO, ISMAEL</h1>
+            <p>Hi, I'm a UX/UI Designer. My main goal is to provide a user-friendly experience by creating functional and visually appealing ideas.</p>
+            <button>Download Resume</button>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h2>My UX Skills</h2>
+            <div class="row">
+                <div class="col-md-4 skill-item">
+                    <img src="https://i.postimg.cc/fbkPv0zL/web-development.png alt="Web Developer">
+                    <h4>Web Developer</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque.</p>
+                </div>
+                <div class="col-md-4 skill-item">
+                    <img src="https://i.postimg.cc/Kvk4C00r/user-interface.png" alt="UI Design">
+                    <h4>User Interface Design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque.</p>
+                </div>
+                <div class="col-md-4 skill-item">
+                    <img src="https://i.postimg.cc/g0kxtmQr/recruitment.png" alt="User Research">
+                    <h4>User Research</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section class="work-section">
+        <div class="container">
+            <h2>My Work</h2>
+            <div class="row">
+                <div class="col-md-6 project-item">
+                    <img src="https://i.postimg.cc/L87zPqn2/Screenshot-2024-08-06-at-12-33-18-PM.png" alt="Project Image">
+                    <h4>Texas Parks & Wildlife</h4>
+                    <p>Short project description</p>
+                    <button>View Project</button>
+                </div>
+                <div class="col-md-6 project-item">
+                    <img src="https://i.postimg.cc/9FwThmLk/NO-Bck-Grnd.png" alt="Project Image" weight="400" height="600">
+                    <h4>The Haus</h4>
+                    <p>Short project description</p>
+                    <button>View Project</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 project-item">
+                    <img src="https://i.postimg.cc/MpxL4pw7/Screenshot-2024-08-01-at-11-08-48-AM.png" alt="Project Image">
+                    <h4>Travel Just Got Easier</h4>
+                    <p>Short project description</p>
+                    <button>View Project</button>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-secondary">View All Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>LET'S CREATE SOMETHING COOL TOGETHER.</p>
+        <p>Contact Information:<br>
+            575-202-4610<br>
+            iss.98nacis@gmail.com
+        </p>
+    </footer>
+
+    <!-- Bootstrap 4 JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
